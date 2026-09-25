@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Name>globalping-probe</Name>
+  <Repository>globalping/globalping-probe:latest</Repository>
+  <Icon>https://raw.githubusercontent.com/joaogalaghar/globalping-unraid/main/templates/icon.png</Icon>
+  <Registry>https://hub.docker.com/r/globalping/globalping-probe</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/joaogalaghar/globalping-unraid/issues</Support>
+  <Project>https://globalping.io/</Project>
+  <Overview>Host a Globalping probe and contribute to a worldwide network for ping, traceroute, MTR, DNS and HTTP measurements. Uses the official Globalping Docker image. Measurements originate from your Internet connection. Optionally enter your own adoption token to link the probe to your account. The WebUI button opens the hosted Globalping Probes page. This is a community-maintained Unraid template.</Overview>
+  <Category>Tools:Utilities</Category>
+  <WebUI>https://dash.globalping.io/probes</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/joaogalaghar/globalping-unraid/main/templates/globalping-probe.xml</TemplateURL>
+  <ReadMe>https://raw.githubusercontent.com/joaogalaghar/globalping-unraid/main/README.md</ReadMe>
+  <ExtraParams>--log-driver=local --restart=always</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <ExtraSearchTerms>globalping probe ping traceroute mtr dns network latency monitoring</ExtraSearchTerms>
+  <Config Name="Adoption token (optional)"
+          Target="GP_ADOPTION_TOKEN"
+          Default=""
+          Mode=""
+          Description="Optional: open https://dash.globalping.io/probes and use Start a probe to obtain your adoption token. Enter it here to associate this probe with your account, or leave empty for an unadopted probe. Keep the token out of public templates."
+          Type="Variable"
+          Display="always"
+          Required="false"
+          Mask="true"/>
+</Container>

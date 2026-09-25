@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommunityApplications>
+  <Profile>Community-maintained Unraid Docker template for the official Globalping probe image. For template support, open an issue in this repository. This repository is not an official Globalping or Unraid project.</Profile>
+  <Icon>https://raw.githubusercontent.com/joaogalaghar/globalping-unraid/main/templates/icon.png</Icon>
+  <WebPage>https://github.com/joaogalaghar/globalping-unraid</WebPage>
+</CommunityApplications>
